@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+//変数
+$hoken-yerrow:#D9E021;
+$hikaeme-text:#333;
+$link-text:#3583aa;
+$visited-text:#788d98;
+$logo-size:80px;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 2;
+}
+
+// small {
+//     color: $hikaeme-text;
+// }
+
+//リセットCSS
+p,h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+}
+
+img {
+    vertical-align: bottom;
+    width: $logo-size;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+//リンクの書式
+.logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul a {
+    color: $link-text;
+    text-decoration: none;
+}
+
+ul a:visited {
+    color: $visited-text;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+//ヘッダーの書式
+header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+a {
+    font-size: 20px;
+}
+
+.global-nav {
+    float: right;
+    margin-top: 60px;
+}
+
+.global-nav li {
+    float: left;
+    margin: 0 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.global-nav li a:hover {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+#wrap {
+    clear: both;
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+//フッターの書式
+footer {
+    text-align: center;
+    color: #fff;
+    width: auto;
+    height: 30px;
+    background-color: #3b4043;
+}
