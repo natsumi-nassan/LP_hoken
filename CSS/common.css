@@ -116,4 +116,16 @@ footer {
   top: 50%;
   left: 5%;
 }
+
+.voice img {
+  width: 20%;
+}
+
+.plan {
+  background-color: #f8f8f8;
+}
+
+.plan img {
+  width: 20%;
+}
 /*# sourceMappingURL=common.css.map */
