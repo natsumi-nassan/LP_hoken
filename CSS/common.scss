@@ -6,6 +6,7 @@ $hikaeme-text:#333;
 $link-text:#3583aa;
 $visited-text:#788d98;
 $logo-size:80px;
+$gray-text:#b9b9b9;
 
 
 body {
@@ -25,9 +26,13 @@ p,h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
 }
 
+h2 {
+    clear: left;
+}
+
 img {
     vertical-align: bottom;
-    margin-right: 20px;
+    margin-right: 3px;
     width: 100%;
 }
 
@@ -121,7 +126,11 @@ footer {
     bottom: 0;
 }
 
-//見出しの書式
+//段落の書式
+
+.i-catch p {
+    margin:20px;
+}
 
 
 //アイキャッチ
@@ -145,16 +154,39 @@ footer {
 //     border-radius: 50%;
 // }
 
+//口コミ
+.voice__content {
+    clear: left;
+    margin: 40px;
+}
+
 .voice img {
-    width: 20%;
+    width: 20%;    
+    float: left;
+    margin-right: 65px;
 }
 
 
 //プラン内容
-.plan {
-    background-color: #f8f8f8;
+.plan img {
+    width: 70%;
 }
 
-.plan img {
-    width: 20%;
+.plan__content {
+    text-align: center;
+    padding: 40px;
+    width: 200px;
+    float: left;
+    background-color: #dbdbdb;
+}
+
+//会社概要
+.office {
+    clear: left;
+}
+
+th {
+    color: $gray-text;
+    text-align: left;
+    width: 200px;
 }
