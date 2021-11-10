@@ -8,6 +8,7 @@ $visited-text:#788d98;
 $logo-size:80px;
 $gray-text:#b9b9b9;
 $main-color:#093dcc;
+$main-font: 'Kosugi', sans-serif;
 
 
 body {
@@ -73,7 +74,7 @@ header {
     float: left;
     margin-top: 50px;
     font-weight: bold;
-    font-family: 'Kosugi', sans-serif;
+    font-family: $main-font;
     display: block;
 }
 
@@ -128,6 +129,11 @@ footer {
     bottom: 0;
 }
 
+//見出しの書式
+h1 {
+    line-height: 1.5;
+}
+
 //段落の書式
 
 .i-catch p {
@@ -153,8 +159,11 @@ footer {
 
 //ボタン
 button {
-    border-color: $main-color;
-    border-radius: 25%;
+    border-color: #093dcc;
+    border-radius: 80px;
+    font-size: 20px;
+    font-family: $main-font;;
+    padding: 0 30px;
 }
 
 //口コミ
@@ -190,6 +199,7 @@ button {
 //会社概要
 .office {
     clear: left;
+    margin: 50px;
 }
 
 th {

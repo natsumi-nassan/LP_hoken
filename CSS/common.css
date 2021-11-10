@@ -54,7 +54,7 @@ header {
   float: left;
   margin-top: 50px;
   font-weight: bold;
-  font-family: 'Kosugi', sans-serif;
+  font-family: "Kosugi", sans-serif;
   display: block;
 }
 
@@ -108,6 +108,10 @@ footer {
   bottom: 0;
 }
 
+h1 {
+  line-height: 1.5;
+}
+
 .i-catch p {
   margin: 80px;
 }
@@ -128,7 +132,10 @@ footer {
 
 button {
   border-color: #093dcc;
-  border-radius: 25%;
+  border-radius: 80px;
+  font-size: 20px;
+  font-family: "Kosugi", sans-serif;
+  padding: 0 30px;
 }
 
 .voice__content {
@@ -160,6 +167,7 @@ button {
 
 .office {
   clear: left;
+  margin: 50px;
 }
 
 th {
