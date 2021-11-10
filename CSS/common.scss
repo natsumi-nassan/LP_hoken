@@ -7,6 +7,7 @@ $link-text:#3583aa;
 $visited-text:#788d98;
 $logo-size:80px;
 $gray-text:#b9b9b9;
+$main-color:#093dcc;
 
 
 body {
@@ -28,6 +29,7 @@ p,h1,h2,h3,h4,h5,h6 {
 
 h2 {
     clear: left;
+    border-bottom: solid 1px;
 }
 
 img {
@@ -129,7 +131,7 @@ footer {
 //段落の書式
 
 .i-catch p {
-    margin:20px;
+    margin:80px;
 }
 
 
@@ -149,10 +151,11 @@ footer {
 }
 
 
-// //問い合わせボタン
-// li.btn {
-//     border-radius: 50%;
-// }
+//ボタン
+button {
+    border-color: $main-color;
+    border-radius: 25%;
+}
 
 //口コミ
 .voice__content {
@@ -168,6 +171,10 @@ footer {
 
 
 //プラン内容
+.plan {
+    padding:0 50px 50px 50px;
+}
+
 .plan img {
     width: 70%;
 }
@@ -190,3 +197,52 @@ th {
     text-align: left;
     width: 200px;
 }
+
+//アクセス
+.access {
+    position: relative;
+    padding-bottom: 75%; // これが縦横比
+    height: 0;
+    overflow: hidden;
+    }
+    .access iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    }
+
+//TOPへ戻るボタン
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
