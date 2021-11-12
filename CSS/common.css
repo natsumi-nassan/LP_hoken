@@ -48,6 +48,17 @@ header {
   width: 960px;
   height: 100px;
   margin: 0 auto;
+  position: fixed;
+  display: block;
+  left: 152px;
+  z-index: 1;
+  background-color: #fff;
+  padding: 0 0 30px 0;
+}
+
+header:scroll {
+  background-color: #fff;
+  opacity: 0.5;
 }
 
 .logo {
@@ -136,9 +147,9 @@ h1, h3 {
 }
 
 button {
-  color: #093dcc;
-  border-color: #46484d;
-  background-color: #dbdbdb;
+  color: #1748ce;
+  border-color: #828285;
+  background-color: #ebebeb;
   border-radius: 80px;
   font-size: 20px;
   font-family: "Kosugi", sans-serif;
@@ -148,8 +159,10 @@ button {
 
 button:hover {
   color: #fff;
-  background-color: #093dcc;
-  border-color: #dbdbdb;
+  background-color: #1748ce;
+  border-color: #ebebeb;
+  border: none;
+  outline: none;
 }
 
 .voice__content {
@@ -176,14 +189,16 @@ button:hover {
   padding: 40px;
   width: 200px;
   float: left;
-  background-color: #dbdbdb;
+  background-color: #ebebeb;
+  margin-bottom: 20px;
 }
 
 span {
+  content: "";
   border: solid white;
 }
 
-span ::before {
+span::before {
   display: block;
   content: "";
   width: 2px;
@@ -191,7 +206,7 @@ span ::before {
   position: absolute;
 }
 
-span ::after {
+span::after {
   content: "";
   width: 2px;
   height: 100px;
@@ -213,6 +228,7 @@ th {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .access iframe {
@@ -225,11 +241,22 @@ th {
 
 .toiawase {
   padding: 0 200px;
+  margin-bottom: 20px;
+}
+
+.toiawase button {
+  padding: 5px 20px;
 }
 
 .mail {
-  background-color: #dbdbdb;
+  background-color: #ebebeb;
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #e-mail {
@@ -238,12 +265,23 @@ th {
 }
 
 #m-button {
-  background-color: #093dcc;
+  background-color: #1748ce;
   color: #fff;
   border: none;
-  width: 50px;
+  width: 70px;
   height: 30px;
   cursor: pointer;
+}
+
+#m-button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
+  background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
+}
+
+.office-end {
+  display: block;
+  position: absolute;
+  right: 300px;
 }
 
 #page_top {
