@@ -9,6 +9,7 @@ $logo-size:80px;
 $gray-text:#b9b9b9;
 $main-color:#093dcc;
 $main-font: 'Kosugi', sans-serif;
+$main-bgcolor: #dbdbdb;
 
 
 body {
@@ -137,7 +138,7 @@ footer {
 }
 
 //見出しの書式
-h1 {
+h1,h3 {
     line-height: 1.5;
 }
 
@@ -157,26 +158,33 @@ h1 {
 #index h1 {
     position: absolute;
     font-size: 40px;
-    line-height: 1;
     color: #fff;
     top: 50%;
     left: 5%;
 }
 
-
 //ボタン
 button {
-    border-color: #093dcc;
+    color: $main-color;
+    border-color: #46484d;
+    background-color: $main-bgcolor;
     border-radius: 80px;
     font-size: 20px;
     font-family: $main-font;;
     padding: 0 30px;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $main-color;
+        border-color: $main-bgcolor;
+    }
 }
 
 //口コミ
 .voice__content {
     clear: left;
-    margin: 40px;
+    margin: 65px;
 }
 
 .voice img {
@@ -200,7 +208,23 @@ button {
     padding: 40px;
     width: 200px;
     float: left;
-    background-color: #dbdbdb;
+    background-color: $main-bgcolor;
+}
+
+span {
+    border: solid white;
+    ::before {
+        display: block;
+        content:"";
+        width: 2px;
+        height: 100px;
+        position: absolute;
+    }
+    ::after {
+        content:"";
+        width: 2px;
+        height: 100px;
+    }
 }
 
 //会社概要
@@ -218,17 +242,43 @@ th {
 //アクセス
 .access {
     position: relative;
-    padding-bottom: 75%; // これが縦横比
+    padding-bottom: 56.25%; // これが縦横比
     height: 0;
     overflow: hidden;
-    }
-    .access iframe {
+
+    iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
     }
+}
+
+//お問い合わせ
+.toiawase {
+    padding: 0 200px;
+}
+
+//メール
+.mail {
+    background-color: $main-bgcolor;
+    padding: 30px;
+}
+
+#e-mail {
+    width: 250px;
+    height: 25px;
+}
+
+#m-button {
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
 
 //TOPへ戻るボタン
 #page_top{
@@ -237,8 +287,9 @@ th {
     position: fixed;
     right: 0;
     bottom: 0;
-    background: #3f98ef;
+    background: $hoken-yerrow;
     opacity: 0.6;
+    cursor: pointer;
   }
   #page_top a{
     position: relative;
@@ -261,4 +312,7 @@ th {
     left: 0;
     margin: auto;
     text-align: center;
+  }
+  #page_top:hover {
+    opacity: 1;
   }
