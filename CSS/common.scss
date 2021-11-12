@@ -286,8 +286,9 @@ th {
 .mail {
     background-color: $main-bgcolor;
     padding: 30px;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
 }
 
 #e-mail {
@@ -312,7 +313,8 @@ th {
 .office-end {
     display: block;
     position: absolute;
-    right: 300px;
+    right: 32px;
+    top: 31px;
 }
 
 //TOPへ戻るボタン

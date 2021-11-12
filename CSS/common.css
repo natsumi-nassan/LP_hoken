@@ -251,12 +251,7 @@ th {
 .mail {
   background-color: #ebebeb;
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
 }
 
 #e-mail {
@@ -281,7 +276,8 @@ th {
 .office-end {
   display: block;
   position: absolute;
-  right: 300px;
+  right: 32px;
+  top: 31px;
 }
 
 #page_top {
