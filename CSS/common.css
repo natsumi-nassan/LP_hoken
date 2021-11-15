@@ -119,15 +119,6 @@ a {
   margin: 0 auto;
 }
 
-footer {
-  text-align: center;
-  color: #fff;
-  width: auto;
-  height: 30px;
-  background-color: #3b4043;
-  bottom: 0;
-}
-
 h1, h3 {
   line-height: 1.5;
 }
@@ -156,6 +147,9 @@ button {
   color: #fff;
   border: 0;
   background-color: #1748ce;
+}
+
+.plan__content button {
   border-radius: 80px;
   font-size: 20px;
   font-family: "Kosugi", sans-serif;
@@ -163,7 +157,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.plan__content button:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
   background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
 }
@@ -248,6 +242,7 @@ th {
 }
 
 .toiawase button {
+  border-radius: 80px;
   padding: 9px 20px;
   margin: 0 5px;
 }
@@ -326,5 +321,24 @@ th {
 
 #page_top:hover {
   opacity: 1;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  width: auto;
+  height: 30px;
+  background-color: #3b4043;
+  bottom: 0;
+}
+
+.sns-btn {
+  background-color: #3b4043;
+  padding: 2px;
+}
+
+.sns-btn:hover {
+  background-color: #3b4043;
+  color: #3583aa;
 }
 /*# sourceMappingURL=common.css.map */

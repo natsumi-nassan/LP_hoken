@@ -10,6 +10,7 @@ $gray-text:#b9b9b9;
 $main-color:#1748ce;
 $main-font: 'Kosugi', sans-serif;
 $main-bgcolor: #ebebeb;
+$footer-color: #3b4043;
 
 
 body {
@@ -142,16 +143,6 @@ a {
     margin: 0 auto;
 }
 
-//フッターの書式
-footer {
-    text-align: center;
-    color: #fff;
-    width: auto;
-    height: 30px;
-    background-color: #3b4043;
-    bottom: 0;
-}
-
 //見出しの書式
 h1,h3 {
     line-height: 1.5;
@@ -186,6 +177,9 @@ button {
     color: #fff;
     border: 0;
     background-color: $main-color;
+}
+
+.plan__content button {
     border-radius: 80px;
     font-size: 20px;
     font-family: $main-font;
@@ -281,6 +275,7 @@ th {
     margin-bottom: 20px;
 
     button {
+        border-radius: 80px;
         padding: 9px 20px;
         margin: 0 5px;
 
@@ -362,3 +357,23 @@ th {
   #page_top:hover {
     opacity: 1;
   }
+
+  //フッターの書式
+footer {
+    text-align: center;
+    color: #fff;
+    width: auto;
+    height: 30px;
+    background-color: $footer-color;
+    bottom: 0;
+}
+
+.sns-btn {
+    background-color: $footer-color;
+    padding: 2px;
+    
+    &:hover {
+        background-color: $footer-color;
+        color: $link-text;
+    }
+}
