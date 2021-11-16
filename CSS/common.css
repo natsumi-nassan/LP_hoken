@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFFFB;
+  background-color: #fff;
   font-size: 15px;
   line-height: 2;
 }
@@ -116,12 +116,16 @@ a {
 }
 
 .content {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
 
 h1, h3 {
   line-height: 1.5;
+}
+
+h2 {
+  text-indent: 1em;
 }
 
 .i-catch p {
@@ -162,6 +166,9 @@ button {
 .plan__content button:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
   background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
 }
 
 .voice__content {
@@ -224,7 +231,7 @@ th {
 
 .access {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 20.25%;
   height: 0;
   overflow: hidden;
   margin-bottom: 20px;
@@ -252,6 +259,9 @@ th {
 .toiawase button:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
   background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
 }
 
 .mail {

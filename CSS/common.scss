@@ -16,7 +16,8 @@ $footer-color: #3b4043;
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFFFFB;
+    background-color: #fff;
+    // background-color: #FaF0E9;
     font-size: 15px;
     line-height: 2;
 }
@@ -140,13 +141,18 @@ a {
 }
 
 .content {
-    width: 960px;
+    width: 100%;
+    // width: 960px;
     margin: 0 auto;
 }
 
 //見出しの書式
 h1,h3 {
     line-height: 1.5;
+}
+
+h2 {
+    text-indent: 1em;
 }
 
 //段落の書式
@@ -191,6 +197,8 @@ button {
     &:hover {
         background: linear-gradient(0deg, rgba(0,3,255,1) 0%,
         rgba(2,126,251,1) 100%);
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+        border-color: transparent;
     }
 }
 
@@ -257,7 +265,7 @@ th {
 //アクセス
 .access {
     position: relative;
-    padding-bottom: 56.25%; // これが縦横比
+    padding-bottom: 20.25%; // これが縦横比
     height: 0;
     overflow: hidden;
     margin-bottom: 20px;
@@ -284,6 +292,8 @@ th {
         &:hover {
             background: linear-gradient(0deg, rgba(0,3,255,1) 0%,
           rgba(2,126,251,1) 100%);
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+            border-color: transparent;
         }
     }
 }
