@@ -84,6 +84,7 @@ header {
         
         &:hover {
             opacity: 1;
+            transition: 0.5s;
         }
     }
 }
@@ -207,6 +208,10 @@ button {
 }
 
 //口コミ
+.voice {
+    margin-bottom: 50px;
+}
+
 .voice__content {
     clear: left;
     margin: 65px;
@@ -221,7 +226,7 @@ button {
 
 //プラン内容
 .plan {
-    padding:0 50px 50px 200px;
+    padding:0 50px 50px 218px;
 }
 
 .plan img {
@@ -257,7 +262,7 @@ span {
 //会社概要
 .office {
     clear: left;
-    margin: 50px;
+    margin: 50px 50px 20px 218px;
 }
 
 th {

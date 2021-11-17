@@ -65,6 +65,8 @@ header.add-opacity {
 
 header.add-opacity:hover {
   opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .logo {
@@ -178,6 +180,10 @@ button {
   border-color: transparent;
 }
 
+.voice {
+  margin-bottom: 50px;
+}
+
 .voice__content {
   clear: left;
   margin: 65px;
@@ -190,7 +196,7 @@ button {
 }
 
 .plan {
-  padding: 0 50px 50px 200px;
+  padding: 0 50px 50px 218px;
 }
 
 .plan img {
@@ -227,7 +233,7 @@ span::after {
 
 .office {
   clear: left;
-  margin: 50px;
+  margin: 50px 50px 20px 218px;
 }
 
 th {
