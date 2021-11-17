@@ -126,6 +126,10 @@
     top: 50%;
     left: 5%;
   }
+  .i-catch p {
+    margin: 50px;
+    text-align: left;
+  }
   .plan {
     padding: 0 50px 50px 50px;
   }
