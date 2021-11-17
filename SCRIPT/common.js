@@ -17,10 +17,10 @@ window.addEventListener('DOMContentLoaded',function(){
   });
 
   //スクロール時、ヘッダーを透過
-  jQuery(window).on('scroll', function () {
-    if (jQuery('.header').height() < jQuery(this).scrollTop()) {
-        jQuery('.header').addClass('add-opacity');
+  $(window).on('scroll', function () {
+    if ($('header').height() < $(this).scrollTop()) {
+        $('header').addClass('add-opacity');
     } else {
-        jQuery('.header').removeClass('add-opacity');
+        $('header').removeClass('add-opacity');
     }
 });

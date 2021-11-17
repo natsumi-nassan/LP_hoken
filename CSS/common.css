@@ -57,6 +57,8 @@ header {
 
 header.add-opacity {
   opacity: 0.5;
+  -webkit-transform: 2s;
+          transform: 2s;
 }
 
 .logo {
