@@ -6,7 +6,7 @@ $hikaeme-text:#333;
 $link-text:#3583aa;
 $visited-text:#788d98;
 $logo-size:80px;
-$gray-text:#b9b9b9;
+$gray-text:#3b4043;
 $main-color:#1748ce;
 $main-font: 'Kosugi', sans-serif;
 $main-bgcolor: #ebebeb;
@@ -16,7 +16,7 @@ $footer-color: #3b4043;
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #fbfbfb;
     // background-color: #FaF0E9;
     font-size: 15px;
     line-height: 2;
@@ -77,11 +77,9 @@ header {
     background-color: #fff;
     padding: 0 0 30px 0;
 
-    &:scroll {
-        background-color: #fff;
+    &.add-opacity {
         opacity: 0.5;
     }
-
 }
 
 .logo {
@@ -217,7 +215,7 @@ button {
 
 //プラン内容
 .plan {
-    padding:0 50px 50px 50px;
+    padding:0 50px 50px 200px;
 }
 
 .plan img {

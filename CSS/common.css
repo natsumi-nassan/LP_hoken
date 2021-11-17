@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #fbfbfb;
   font-size: 15px;
   line-height: 2;
 }
@@ -55,8 +55,7 @@ header {
   padding: 0 0 30px 0;
 }
 
-header:scroll {
-  background-color: #fff;
+header.add-opacity {
   opacity: 0.5;
 }
 
@@ -183,7 +182,7 @@ button {
 }
 
 .plan {
-  padding: 0 50px 50px 50px;
+  padding: 0 50px 50px 200px;
 }
 
 .plan img {
@@ -224,7 +223,7 @@ span::after {
 }
 
 th {
-  color: #b9b9b9;
+  color: #3b4043;
   text-align: left;
   width: 200px;
 }

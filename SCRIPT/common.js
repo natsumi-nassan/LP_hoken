@@ -1,6 +1,7 @@
 const KEN = 5 ; 
 console.log(KEN);
 
+// ボタン押下時、任意の見出しへ移動
 window.addEventListener('DOMContentLoaded',function(){
     // #で始まるリンクをクリックしたら実行されます
     $('a[href*="#"]').click(function() {
@@ -14,3 +15,12 @@ window.addEventListener('DOMContentLoaded',function(){
       return false;
     });
   });
+
+  //スクロール時、ヘッダーを透過
+  jQuery(window).on('scroll', function () {
+    if (jQuery('.header').height() < jQuery(this).scrollTop()) {
+        jQuery('.header').addClass('add-opacity');
+    } else {
+        jQuery('.header').removeClass('add-opacity');
+    }
+});
