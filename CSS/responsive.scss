@@ -88,7 +88,7 @@ $footer-color: #3b4043;
         display: block;
         position: absolute;
         top: 20px;
-        right: 130px;
+        right: 20px;
         width: 50px;
         height: 44px;
         cursor: pointer;
@@ -146,6 +146,11 @@ $footer-color: #3b4043;
         left: 5%;
     }
 
+
+    //プラン内容
+    .plan {
+        padding:0 50px 50px 50px;
+    }
     //会社概要
     .office {
         clear: left;
