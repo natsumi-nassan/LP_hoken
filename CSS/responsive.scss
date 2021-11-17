@@ -53,24 +53,24 @@ $footer-color: #3b4043;
         }
     }
 
-    nav {
+    #nav {
         position: absolute;
         height: 100vh;
         width: 40%;
-        right: -30%;
+        right: -40%;
         top: 0;
         background: #ffffff;
         transition: .7s;
     }
 
-    nav ul{
+    #nav ul{
         padding-top: 80px;
       }
-      nav ul li{
+      #nav ul li{
         list-style-type: none;
         font-size: 20px;
       }
-      nav a{
+      #nav a{
         display: block;
         text-decoration: none;
         color: #000000;
@@ -78,7 +78,7 @@ $footer-color: #3b4043;
         padding: 10px;
         transition: .5s;
       }
-      nav li a:hover{
+      #nav li a:hover{
         color: #ffffff;
         background: #cd5c5c;
         border-bottom: none;
@@ -88,7 +88,7 @@ $footer-color: #3b4043;
         display: block;
         position: absolute;
         top: 20px;
-        right: 105px;
+        right: 130px;
         width: 50px;
         height: 44px;
         cursor: pointer;
@@ -131,5 +131,47 @@ $footer-color: #3b4043;
         transform: translateY(-15px) rotate(45deg);
         bottom: 0;
       }
+    
+    //アイキャッチ
+    .i-catch {
+        position: relative;
+        width: 100%;
+    }
+
+    #index h1 {
+        position: absolute;
+        font-size: 25px;
+        color: #fff;
+        top: 50%;
+        left: 5%;
+    }
+
+    //会社概要
+    .office {
+        clear: left;
+        margin: 50px 50px 20px 50px;
+    }
+
+    th {
+        color: $gray-text;
+        text-align: left;
+        width: 90px;
+    }
+
+    //お問い合わせ
+    .toiawase {
+        padding: 0 50px;
+        margin-bottom: 20px;
+
+        button {
+            border-radius: 80px;
+            padding: 9px 17px;
+            margin: 0 5px;
+        }
+    }
+    //会社情報削除
+    .office_end {
+        content: none;
+    }
 }
 
