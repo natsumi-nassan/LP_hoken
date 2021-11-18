@@ -35,3 +35,22 @@ function hamburger() {
 document.getElementById('hamburger').addEventListener('click' , function () {
   hamburger();
 } );
+
+$(function() {
+
+  let = hukugen;
+ 
+  //ウインドウがリサイズされたら発動
+  $(window).resize(function() {
+ 
+    //office-endクラスを削除
+    hukugen = $(".office-end").remove();
+ 
+  });
+
+  // $(window).resize(function() {
+
+  //   $(".office-end").append(hukugen);
+  // });
+  
+});
