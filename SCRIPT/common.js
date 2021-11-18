@@ -38,13 +38,13 @@ document.getElementById('hamburger').addEventListener('click' , function () {
 
 $(function() {
 
-  let = hukugen;
+  // let = hukugen;
  
   //ウインドウがリサイズされたら発動
   $(window).resize(function() {
  
     //office-endクラスを削除
-    hukugen = $(".office-end").remove();
+    $(".office-end").remove();
  
   });
 
