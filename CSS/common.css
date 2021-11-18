@@ -137,7 +137,7 @@ h2 {
   text-indent: 1em;
 }
 
-.i-catch p {
+.i-catch__p {
   margin: 66px;
   text-align: center;
 }
@@ -153,6 +153,14 @@ h2 {
   color: #fff;
   top: 50%;
   left: 5%;
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
 }
 
 button {

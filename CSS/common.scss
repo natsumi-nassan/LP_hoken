@@ -162,11 +162,10 @@ h2 {
 
 //段落の書式
 
-.i-catch p {
+.i-catch__p {
     margin:66px;
     text-align: center;
 }
-
 
 //アイキャッチ
 .i-catch {
@@ -181,6 +180,9 @@ h2 {
     top: 50%;
     left: 5%;
 }
+
+.pc { display: block !important; }
+.sp { display: none !important; }
 
 //ボタン
 button {

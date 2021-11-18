@@ -36,6 +36,7 @@ document.getElementById('hamburger').addEventListener('click' , function () {
   hamburger();
 } );
 
+//PCとスマホで要素の削除切り替えを行う
 $(function() {
 
   // let = hukugen;
@@ -54,3 +55,11 @@ $(function() {
   // });
   
 });
+
+//アイキャッチをPCとスマホで切り替える
+// $(function() {
+
+//   $(window).resize(function() {
+//     $(".img").attr("src","./img/tozan_catch_mini.jpg")
+//     });
+//   });

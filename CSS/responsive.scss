@@ -25,11 +25,12 @@ $footer-color: #3b4043;
         position: fixed;
         display: block;
         z-index: 1;
-        background-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
         padding: 0 0 30px 0;
         transition: 1s;
     }
 
+    //ロゴの書式
     .logo {
         float: left;
         margin-top: 16px;
@@ -43,6 +44,7 @@ $footer-color: #3b4043;
 
         a {
             font-size: 17px;
+            color: #fff;
         }
 
         small {
@@ -138,6 +140,9 @@ $footer-color: #3b4043;
         width: 100%;
     }
 
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+
     #index h1 {
         position: absolute;
         font-size: 25px;
@@ -148,10 +153,25 @@ $footer-color: #3b4043;
 
     //段落の書式
 
-    .i-catch p {
+    .i-catch__p {
         margin:50px;
         text-align: left;
     }
+
+    .voice {
+      margin-bottom: 1px;
+
+      img {
+      width: 50%;    
+      float: left;
+      margin-right: 13px;
+      }
+  }
+
+  .voice__content {
+    clear: left;
+    margin: 45px;
+}
 
     //プラン内容
     .plan {

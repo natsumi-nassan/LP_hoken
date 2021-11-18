@@ -9,7 +9,7 @@
     position: fixed;
     display: block;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 0 0 30px 0;
     -webkit-transition: 1s;
     transition: 1s;
@@ -26,6 +26,7 @@
   }
   .logo a {
     font-size: 17px;
+    color: #fff;
   }
   .logo small {
     position: relative;
@@ -119,6 +120,12 @@
     position: relative;
     width: 100%;
   }
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
   #index h1 {
     position: absolute;
     font-size: 25px;
@@ -126,9 +133,21 @@
     top: 50%;
     left: 5%;
   }
-  .i-catch p {
+  .i-catch__p {
     margin: 50px;
     text-align: left;
+  }
+  .voice {
+    margin-bottom: 1px;
+  }
+  .voice img {
+    width: 50%;
+    float: left;
+    margin-right: 13px;
+  }
+  .voice__content {
+    clear: left;
+    margin: 45px;
   }
   .plan {
     padding: 0 50px 50px 50px;
