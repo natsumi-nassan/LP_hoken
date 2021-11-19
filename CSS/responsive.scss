@@ -58,8 +58,8 @@ $footer-color: #3b4043;
     #nav {
         position: absolute;
         height: 100vh;
-        width: 40%;
-        right: -40%;
+        width: 100%;
+        right: -100%;
         top: 0;
         background: #ffffff;
         transition: .7s;
@@ -84,6 +84,20 @@ $footer-color: #3b4043;
         color: #ffffff;
         background: $main-color;
         border-bottom: none;
+      }
+
+      .global-nav {
+        float: right;
+        margin-top: 30px;
+        margin-right: 91px;
+        text-align: center;
+
+        li {
+          clear: left;
+          margin: 0 10px;
+          font-size: 20px;
+          list-style: none;
+        }
       }
 
       #hamburger {
@@ -171,12 +185,27 @@ $footer-color: #3b4043;
   .voice__content {
     clear: left;
     margin: 45px;
-}
+  }
 
     //プラン内容
     .plan {
         padding:0 50px 50px 50px;
+
+        img {
+          width: 40%;
+          float: left;
+        }
+
+        h3 {
+          margin: 30px;
+          padding-left: 75px;
+        }
     }
+
+    .plan__content button {
+      width: 200px;
+    }
+
     //会社概要
     .office {
         clear: left;
@@ -189,6 +218,11 @@ $footer-color: #3b4043;
         width: 90px;
     }
 
+    //アクセス
+  .access {
+    padding-bottom: 56.25%; // これが縦横比
+  }
+
     //お問い合わせ
     .toiawase {
         padding: 0 50px;
@@ -199,10 +233,6 @@ $footer-color: #3b4043;
             padding: 9px 17px;
             margin: 0 5px;
         }
-    }
-    //会社情報削除
-    .office_end {
-        content: none;
     }
 }
 
