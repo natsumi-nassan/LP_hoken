@@ -244,22 +244,22 @@ button {
     margin-bottom: 20px;
 }
 
-span {
-    content:"";
-    border: solid white;
-    &::before {
-        display: block;
-        content:"";
-        width: 2px;
-        height: 100px;
-        position: absolute;
-    }
-    &::after {
-        content:"";
-        width: 2px;
-        height: 100px;
-    }
-}
+// span {
+//     content:"";
+//     border: solid white;
+//     &::before {
+//         display: block;
+//         content:"";
+//         width: 2px;
+//         height: 100px;
+//         position: absolute;
+//     }
+//     &::after {
+//         content:"";
+//         width: 2px;
+//         height: 100px;
+//     }
+// }
 
 //会社概要
 .office {

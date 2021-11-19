@@ -9,7 +9,7 @@
     position: fixed;
     display: block;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0);
     padding: 0 0 30px 0;
     -webkit-transition: 1s;
     transition: 1s;
@@ -62,14 +62,14 @@
   }
   #nav li a:hover {
     color: #ffffff;
-    background: #cd5c5c;
+    background: #1748ce;
     border-bottom: none;
   }
   #hamburger {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 23px;
+    right: 12px;
     width: 50px;
     height: 44px;
     cursor: pointer;
@@ -82,7 +82,7 @@
     left: 0;
     width: 40px;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     -webkit-transition: 1s;
     transition: 1s;
     border-radius: 4px;
@@ -94,7 +94,7 @@
     top: 12px;
   }
   #line3 {
-    bottom: 12px;
+    bottom: 16px;
   }
   .in {
     -webkit-transform: translateX(100%);

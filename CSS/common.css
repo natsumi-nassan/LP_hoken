@@ -220,25 +220,6 @@ button {
   margin-bottom: 20px;
 }
 
-span {
-  content: "";
-  border: solid white;
-}
-
-span::before {
-  display: block;
-  content: "";
-  width: 2px;
-  height: 100px;
-  position: absolute;
-}
-
-span::after {
-  content: "";
-  width: 2px;
-  height: 100px;
-}
-
 .office {
   clear: left;
   margin: 50px 50px 20px 218px;
