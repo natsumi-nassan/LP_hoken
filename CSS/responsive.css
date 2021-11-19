@@ -111,9 +111,10 @@
   .in {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    left: -100%;
   }
   .line_1, .line_2, .line_3 {
-    background: #000000;
+    background: #fff;
   }
   .line_1 {
     -webkit-transform: translateY(10px) rotate(-45deg);
@@ -162,7 +163,7 @@
     margin: 45px;
   }
   .plan {
-    padding: 0 50px 50px 60px;
+    padding: 0 50px 50px 50px;
   }
   .plan img {
     width: 40%;

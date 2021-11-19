@@ -132,9 +132,10 @@ $footer-color: #3b4043;
 
       .in{
         transform: translateX(100%);
+        left:-100%;
       }
       .line_1,.line_2,.line_3{
-        background: #000000;
+        background: #fff;
       }
       .line_1 {
         transform: translateY(10px) rotate(-45deg);
@@ -189,7 +190,7 @@ $footer-color: #3b4043;
 
     //プラン内容
     .plan {
-        padding:0 50px 50px 60px;
+        padding:0 50px 50px 50px;
 
         img {
           width: 40%;
