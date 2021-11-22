@@ -6,19 +6,18 @@ window.addEventListener('DOMContentLoaded',function(){
       let speed = 500; // ミリ秒で記述
       let href= $(this).attr("href");
       let target = $(href == "#" || href == "" ? 'html' : href);
-      // alert = "OK";
       let position = target.offset().top-90;
       $('body,html').animate({scrollTop:position}, speed);
       return false;
     });
   });
 
-  //スクロール時、ヘッダーを透過
+  //SPスクロール時、ヘッダーに色変えクラス追加切り替え
   $(window).on('scroll', function () {
     if ($('header').height() < $(this).scrollTop()) {
-        $('header').addClass('add-opacity');
+        $('header').addClass('add-color');
     } else {
-        $('header').removeClass('add-opacity');
+        $('header').removeClass('add-color');
     }
 });
 
@@ -36,31 +35,14 @@ $('li a').click(function () {
   hamburger();
 });
 
-//PCとスマホで要素の削除切り替えを行う
-// $(function() {
-//   //ウインドウがリサイズされたら発動
-//   $(window).resize(function() { 
-//     //office-endクラスを表示非表示
-//     $(".office-end").toggle(); 
-//   });  
-// });
-
-//スマホヘッダーの透明化無効
 // メディアクエリの値を定義
 let mediaQuery = '(max-width: 960px)';
-
 // 1. MediaQueryListオブジェクトを生成
 let mql = window.matchMedia(mediaQuery); 
-
-// 2. 実行する処理を追加
+// 2. 実行する処理
 function runMethod() {
     // PCとスマホで要素の削除切り替えを行う
     $(".office-end").toggle(); 
-    // ヘッダー透過をやめる
-    $(window).on('scroll', function () {
-    $('header').removeClass('add-opacity');});
-    console.log('Change!');
 }
-
 // 3. イベントリスナーを設定
 mql.addEventListener('change', runMethod, false);

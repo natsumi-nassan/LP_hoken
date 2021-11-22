@@ -14,8 +14,8 @@
     -webkit-transition: 1s;
     transition: 1s;
   }
-  header.remove-opacity {
-    background-color: #fff;
+  header.add-color {
+    background-color: #1748ce;
   }
   .logo {
     float: left;
@@ -139,12 +139,7 @@
   .i-catch {
     position: relative;
     width: 100%;
-  }
-  .pc {
-    display: none !important;
-  }
-  .sp {
-    display: block !important;
+    display: block;
   }
   #index h1 {
     position: absolute;
