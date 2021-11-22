@@ -27,12 +27,12 @@ window.addEventListener('DOMContentLoaded',function(){
 
 //右寄りハンバーガーメニュー実装
 function hamburger() {
-  document.getElementById('line1').classList.toggle('line_1');
-  document.getElementById('line2').classList.toggle('line_2');
-  document.getElementById('line3').classList.toggle('line_3');
-  document.getElementById('nav').classList.toggle('in');
+  $('#line1').toggleClass('line_1');
+  $('#line2').toggleClass('line_2');
+  $('#line3').toggleClass('line_3');
+  $('#nav').toggleClass('in');
 }
-document.getElementById('hamburger').addEventListener('click' , function () {
+$('#hamburger').click(function () {
   hamburger();
 } );
 
@@ -56,6 +56,9 @@ let mql = window.matchMedia(mediaQuery);
 function runMethod() {
     // PCとスマホで要素の削除切り替えを行う
     $(".office-end").toggle(); 
+    // ヘッダー透過をやめる
+    $(window).on('scroll', function () {
+    $('header').removeClass('add-opacity');});
     console.log('Change!');
 }
 

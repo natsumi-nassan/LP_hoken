@@ -14,6 +14,9 @@
     -webkit-transition: 1s;
     transition: 1s;
   }
+  header.remove-opacity {
+    background-color: #fff;
+  }
   .logo {
     float: left;
     margin-top: 16px;
@@ -37,7 +40,7 @@
   #nav {
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     right: -100%;
     top: 0;
     background: #1748ce;
@@ -94,7 +97,7 @@
     left: 0;
     width: 40px;
     height: 3px;
-    background-color: #fff;
+    background-color: #D9E021;
     -webkit-transition: 1s;
     transition: 1s;
     border-radius: 4px;
