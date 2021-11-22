@@ -61,7 +61,7 @@ $footer-color: #3b4043;
         width: 100%;
         right: -100%;
         top: 0;
-        background: #ffffff;
+        background: $main-color;
         transition: .7s;
     }
 
@@ -75,7 +75,7 @@ $footer-color: #3b4043;
       #nav a{
         display: block;
         text-decoration: none;
-        color: #000000;
+        color: #fff;
         margin: 0 15px;
         padding: 10px;
         transition: .5s;
@@ -133,6 +133,7 @@ $footer-color: #3b4043;
       .in{
         transform: translateX(100%);
         left:-100%;
+        transition: 7s;
       }
       .line_1,.line_2,.line_3{
         background: $hoken-yerrow;

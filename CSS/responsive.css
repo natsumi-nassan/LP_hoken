@@ -40,7 +40,7 @@
     width: 100%;
     right: -100%;
     top: 0;
-    background: #ffffff;
+    background: #1748ce;
     -webkit-transition: .7s;
     transition: .7s;
   }
@@ -54,7 +54,7 @@
   #nav a {
     display: block;
     text-decoration: none;
-    color: #000000;
+    color: #fff;
     margin: 0 15px;
     padding: 10px;
     -webkit-transition: .5s;
@@ -112,6 +112,8 @@
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     left: -100%;
+    -webkit-transition: 7s;
+    transition: 7s;
   }
   .line_1, .line_2, .line_3 {
     background: #D9E021;
