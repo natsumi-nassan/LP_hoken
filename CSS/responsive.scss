@@ -63,7 +63,7 @@ $footer-color: #3b4043;
         position: absolute;
         height: 100vh;
         width: 100vw;
-        right: -100%;
+        right: 100%;
         top: 0;
         background: $main-color;
         transition: .7s;
@@ -136,7 +136,7 @@ $footer-color: #3b4043;
 
       .in{
         transform: translateX(100%);
-        left:-100%;
+        right:0;
         transition: 7s;
       }
       .line_1,.line_2,.line_3{
