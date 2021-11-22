@@ -252,14 +252,13 @@
   .slide-down {
     height: auto;
     overflow: visible;
-    padding-bottom: 50px;
   }
   .more-btn p {
     display: inline-block;
     color: #fff;
     cursor: pointer;
     background: #1748ce;
-    width: 80%;
+    width: 60%;
     border-radius: 20px;
   }
   .close-btn {
