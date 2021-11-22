@@ -114,7 +114,7 @@
     left: -100%;
   }
   .line_1, .line_2, .line_3 {
-    background: #fff;
+    background: #D9E021;
   }
   .line_1 {
     -webkit-transform: translateY(10px) rotate(-45deg);
