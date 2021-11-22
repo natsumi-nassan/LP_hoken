@@ -1,6 +1,3 @@
-const KEN = 5 ; 
-console.log(KEN);
-
 // ボタン押下時、任意の見出しへ移動
 window.addEventListener('DOMContentLoaded',function(){
     // #で始まるリンクをクリックしたら実行されます
@@ -25,7 +22,7 @@ window.addEventListener('DOMContentLoaded',function(){
     }
 });
 
-//右寄りハンバーガーメニュー実装
+//左から出る右寄りハンバーガーメニュー実装
 function hamburger() {
   $('#line1').toggleClass('line_1');
   $('#line2').toggleClass('line_2');
@@ -34,7 +31,10 @@ function hamburger() {
 }
 $('#hamburger').click(function () {
   hamburger();
-} );
+});
+$('li a').click(function () {
+  hamburger();
+});
 
 //PCとスマホで要素の削除切り替えを行う
 // $(function() {
