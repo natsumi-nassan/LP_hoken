@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',function(){
       let speed = 500; // ミリ秒で記述
       let href= $(this).attr("href");
       let target = $(href == "#" || href == "" ? 'html' : href);
-      alert = "OK";
+      // alert = "OK";
       let position = target.offset().top-90;
       $('body,html').animate({scrollTop:position}, speed);
       return false;
@@ -44,8 +44,8 @@ $(function() {
   //ウインドウがリサイズされたら発動
   $(window).resize(function() {
  
-    //office-endクラスを削除
-    $(".office-end").remove();
+    //office-endクラスを表示非表示
+    $(".office-end").toggle();
  
   });
 
