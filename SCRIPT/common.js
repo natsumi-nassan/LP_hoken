@@ -37,29 +37,27 @@ document.getElementById('hamburger').addEventListener('click' , function () {
 } );
 
 //PCとスマホで要素の削除切り替えを行う
-$(function() {
-
-  // let = hukugen;
- 
-  //ウインドウがリサイズされたら発動
-  $(window).resize(function() {
- 
-    //office-endクラスを表示非表示
-    $(".office-end").toggle();
- 
-  });
-
-  // $(window).resize(function() {
-
-  //   $(".office-end").append(hukugen);
-  // });
-  
-});
-
-//アイキャッチをPCとスマホで切り替える
 // $(function() {
+//   //ウインドウがリサイズされたら発動
+//   $(window).resize(function() { 
+//     //office-endクラスを表示非表示
+//     $(".office-end").toggle(); 
+//   });  
+// });
 
-//   $(window).resize(function() {
-//     $(".img").attr("src","./img/tozan_catch_mini.jpg")
-//     });
-//   });
+//スマホヘッダーの透明化無効
+// メディアクエリの値を定義
+let mediaQuery = '(max-width: 960px)';
+
+// 1. MediaQueryListオブジェクトを生成
+let mql = window.matchMedia(mediaQuery); 
+
+// 2. 実行する処理を追加
+function runMethod() {
+    // PCとスマホで要素の削除切り替えを行う
+    $(".office-end").toggle(); 
+    console.log('Change!');
+}
+
+// 3. イベントリスナーを設定
+mql.addEventListener('change', runMethod, false);
