@@ -65,6 +65,7 @@ ul a {
         text-decoration: underline;
     }
 }
+
 //ヘッダーの書式
 header {
     width: 100%;
@@ -111,19 +112,17 @@ header {
 .global-nav {
     float: right;
     margin-top: 30px;
-}
-
-.global-nav li {
-    float: left;
-    margin: 0 10px;
-    font-size: 20px;
-    list-style: none;
-}
-
-.global-nav li a:hover {
-    border-bottom: 2px solid #000;
-    padding-bottom: 3px;
-    text-decoration: none;
+    li {
+        float: left;
+        margin: 0 10px;
+        font-size: 20px;
+        list-style: none;
+        a:hover {
+            border-bottom: 2px solid #000;
+            padding-bottom: 3px;
+            text-decoration: none;
+        }
+    }
 }
 
 //ボディの書式
