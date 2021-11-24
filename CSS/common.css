@@ -144,6 +144,10 @@ h2 {
   left: 5%;
 }
 
+.more-btn {
+  display: none;
+}
+
 button {
   -moz-appearance: none;
   -webkit-appearance: none;

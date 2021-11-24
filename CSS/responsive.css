@@ -229,6 +229,7 @@
     margin: 0;
   }
   .close-btn, .more-btn {
+    cursor: pointer;
     display: block;
     width: 100%;
     padding: 100px 0 0;

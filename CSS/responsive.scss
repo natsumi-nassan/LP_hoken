@@ -186,7 +186,7 @@ $footer-color: #3b4043;
       float: left;
       margin-right: 13px;
       }
-  }
+    }
 
     .voice__content {
       clear: left;
@@ -258,6 +258,7 @@ $footer-color: #3b4043;
       margin: 0;
     }
     .close-btn, .more-btn {
+      cursor: pointer;
       display: block;
       width: 100%;
       padding: 100px 0 0;
