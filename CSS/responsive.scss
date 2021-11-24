@@ -47,12 +47,17 @@ $main-whcolor: #fbfbfb;
         transition: .7s;
         ul{
             padding-top: 80px;
+            margin-right: 90px;
+            // display: block;
+            // width: 100%;
+            // left: 0;
             li{
                 list-style-type: none;
                 font-size: 20px;
+                // border-bottom: solid 0.1px #fff;
                 a:hover{
-                    color: #ffffff;
-                    background: $main-color;
+                    color: $main-color;
+                    background: #fff;
                     border-bottom: none;
                   }
             }
@@ -67,12 +72,8 @@ $main-whcolor: #fbfbfb;
         }
     }
 
-    .global-nav {
-        margin-right: 91px;
-        text-align: center;
-        li {
-            clear: left;
-        }
+    .global-nav li {
+        clear: left;
     }
 
     //ハンバーガーメニューの書式

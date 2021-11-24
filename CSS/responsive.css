@@ -35,14 +35,15 @@
   }
   #nav ul {
     padding-top: 80px;
+    margin-right: 90px;
   }
   #nav ul li {
     list-style-type: none;
     font-size: 20px;
   }
   #nav ul li a:hover {
-    color: #ffffff;
-    background: #1748ce;
+    color: #1748ce;
+    background: #fff;
     border-bottom: none;
   }
   #nav a {
@@ -53,10 +54,6 @@
     padding: 10px;
     -webkit-transition: .5s;
     transition: .5s;
-  }
-  .global-nav {
-    margin-right: 91px;
-    text-align: center;
   }
   .global-nav li {
     clear: left;
