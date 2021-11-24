@@ -256,10 +256,11 @@
   }
   .more-btn p {
     display: inline-block;
-    color: #fff;
+    color: #1748ce;
     cursor: pointer;
-    background: #1748ce;
+    background: #fbfbfb;
     width: 40%;
+    border: solid #1748ce;
     border-radius: 20px;
     margin-left: 150px;
   }
@@ -268,6 +269,8 @@
   }
   .close-btn p {
     background: #aaa;
+    color: #fff;
+    border: none;
   }
   .plan {
     padding: 0 50px 50px 50px;

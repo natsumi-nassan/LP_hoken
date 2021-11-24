@@ -10,14 +10,14 @@ $gray-text:#3b4043;
 $main-color:#1748ce;
 $main-font: 'Kosugi', sans-serif;
 $main-bgcolor: #ebebeb;
+$main-whcolor: #fbfbfb;
 $footer-color: #3b4043;
 
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #fbfbfb;
-    // background-color: #FaF0E9;
+    background-color: $main-whcolor;
     font-size: 15px;
     line-height: 2;
 }

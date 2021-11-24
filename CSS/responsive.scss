@@ -10,11 +10,12 @@ $gray-text:#3b4043;
 $main-color:#1748ce;
 $main-font: 'Kosugi', sans-serif;
 $main-bgcolor: #ebebeb;
+$main-whcolor: #fbfbfb;
 $footer-color: #3b4043;
 
 @media screen and (max-width: 960px) {
     body {
-        background-color: #fbfbfb;
+        background-color: $main-whcolor;
     }
 
     //ヘッダーの書式
@@ -301,10 +302,11 @@ $footer-color: #3b4043;
     }
     .more-btn p {
       display: inline-block;
-      color: #fff;
+      color: $main-color;
       cursor: pointer;
-      background: $main-color;
+      background: $main-whcolor;
       width: 40%;
+      border: solid $main-color;
       border-radius: 20px;
       margin-left: 150px;
     }
@@ -313,6 +315,8 @@ $footer-color: #3b4043;
     }
     .close-btn p {
       background: #aaa;
+      color: #fff;
+      border: none;
     }
 
 
