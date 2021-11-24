@@ -236,7 +236,7 @@ th {
 }
 
 .toiawase {
-  padding: 0 344px;
+  padding: 0 220px;
   margin-bottom: 20px;
 }
 
@@ -252,6 +252,10 @@ th {
   -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
+}
+
+#help {
+  margin-left: 510px;
 }
 
 .mail {
