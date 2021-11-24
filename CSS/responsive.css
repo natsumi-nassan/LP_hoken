@@ -286,6 +286,9 @@
   .plan__content button {
     width: 200px;
   }
+  .plan__content button:hover {
+    width: 200px;
+  }
   .office {
     clear: left;
     margin: 50px 50px 20px 50px;

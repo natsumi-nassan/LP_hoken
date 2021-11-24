@@ -337,6 +337,10 @@ $footer-color: #3b4043;
 
     .plan__content button {
       width: 200px;
+
+      &:hover {
+        width: 200px;
+      }
     }
 
     //会社概要
