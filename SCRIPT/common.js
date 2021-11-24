@@ -1,5 +1,5 @@
 // ボタン押下時、任意の見出しへ移動
-window.addEventListener('DOMContentLoaded',function(){
+$(function(){
     // #で始まるリンクをクリックしたら実行されます
     $('a[href*="#"]').click(function() {
       // スクロールの速度

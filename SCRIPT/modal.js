@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded',function(){
+$(function(){
     $('.js-modal-open').on('click',function(){
         $('.js-modal').fadeIn();
         return false;
