@@ -191,12 +191,14 @@ button {
     border-radius: 80px;
     font-size: 20px;
     padding: 5px 28px 4px;
+    width: 135px;
 
     &:hover {
         background: linear-gradient(0deg, rgba(0,3,255,1) 0%,
         rgba(2,126,251,1) 100%);
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
         border-color: transparent;
+        width: 135px;
     }
 }
 

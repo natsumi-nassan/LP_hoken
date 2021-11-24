@@ -162,6 +162,7 @@ button {
   border-radius: 80px;
   font-size: 20px;
   padding: 5px 28px 4px;
+  width: 135px;
 }
 
 .plan__content button:hover {
@@ -170,6 +171,7 @@ button {
   -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
+  width: 135px;
 }
 
 .voice {
