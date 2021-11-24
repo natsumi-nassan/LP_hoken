@@ -1,15 +1,14 @@
 @charset "UTF-8";
 
 //変数
+$main-color:#1748ce;
 $hoken-yerrow:#D9E021;
-$hikaeme-text:#333;
 $link-text:#3583aa;
 $visited-text:#788d98;
 $logo-size:80px;
 $gray-text:#3b4043;
-$main-color:#1748ce;
 $main-font: 'Kosugi', sans-serif;
-$main-bgcolor: #ebebeb;
+$gray-bgcolor: #ebebeb;
 $main-whcolor: #fbfbfb;
 $footer-color: #3b4043;
 
@@ -21,10 +20,6 @@ body {
     font-size: 15px;
     line-height: 2;
 }
-
-// small {
-//     color: $hikaeme-text;
-// }
 
 //リセットCSS
 p,h1,h2,h3,h4,h5,h6,input {
@@ -48,24 +43,28 @@ ul {
 }
 
 //リンクの書式
+a {
+    font-size: 20px;
+}
+
+//サイトタイトルの書式
 .logo a {
     color: #000;
     text-decoration: none;
 }
 
+//メニューリンクの書式
 ul a {
     color: $link-text;
     text-decoration: none;
-}
 
-ul a:visited {
-    color: $visited-text;
+    &:visited {
+        color: $visited-text;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
 }
-
-ul a:hover {
-    text-decoration: underline;
-}
-
 //ヘッダーの書式
 header {
     width: 100%;
@@ -79,6 +78,7 @@ header {
     transition: 1s;
 }
 
+//ロゴの書式
 .logo {
     float: left;
     margin-top: 20px;
@@ -87,28 +87,23 @@ header {
         font: {
             weight: bold;
             family: $main-font;
-        }    
+        }
         a {
             font-size: 25px;
-    }
+        }
+        small {
+            position: relative;
+            left: 100px;
+            font-size: 10px;
+            top: -34px;
+        }
+        img {
+            width: $logo-size;
+            margin-right: 20px;
+        }
 }
 
-.logo small {
-    position: relative;
-    left: 100px;
-    font-size: 10px;
-    top: -34px;
-}
-
-.logo img {
-    width: $logo-size;
-    margin-right: 20px;
-}
-
-a {
-    font-size: 20px;
-}
-
+//メニューの書式
 .nav {
     margin: 0 40px;
 }
@@ -131,6 +126,7 @@ a {
     text-decoration: none;
 }
 
+//ボディの書式
 #wrap {
     clear: both;
 }
@@ -150,13 +146,6 @@ h2 {
     text-indent: 1em;
 }
 
-//段落の書式
-
-.i-catch__p {
-    margin:66px;
-    text-align: center;
-}
-
 //アイキャッチ
 .i-catch {
     position: relative;
@@ -164,6 +153,13 @@ h2 {
     display: block;
 }
 
+//アイキャッチの段落の書式
+.i-catch__p {
+    margin:66px;
+    text-align: center;
+}
+
+//アイキャッチの大見出し
 #index h1 {
     position: absolute;
     font-size: 40px;
@@ -206,6 +202,12 @@ button {
 //口コミ
 .voice {
     margin-bottom: 50px;
+
+    img {
+        width: 20%;    
+        float: left;
+        margin-right: 65px;
+    }
 }
 
 .voice__content {
@@ -213,20 +215,13 @@ button {
     margin: 65px;
 }
 
-.voice img {
-    width: 20%;    
-    float: left;
-    margin-right: 65px;
-}
-
-
 //プラン内容
 .plan {
     padding:0 50px 50px 218px;
     
     img {
-    width: 70%;
-    margin-right: 3px;
+        width: 70%;
+        margin-right: 3px;
     }
 }
 
@@ -235,26 +230,9 @@ button {
     padding: 40px;
     width: 200px;
     float: left;
-    background-color: $main-bgcolor;
+    background-color: $gray-bgcolor;
     margin-bottom: 20px;
 }
-
-// span {
-//     content:"";
-//     border: solid white;
-//     &::before {
-//         display: block;
-//         content:"";
-//         width: 2px;
-//         height: 100px;
-//         position: absolute;
-//     }
-//     &::after {
-//         content:"";
-//         width: 2px;
-//         height: 100px;
-//     }
-// }
 
 //会社概要
 .office {
@@ -268,7 +246,7 @@ th {
     width: 200px;
 }
 
-//アクセス
+//アクセス（グーグルマップ埋め込み）
 .access {
     position: relative;
     padding-bottom: 20.25%; // これが縦横比
@@ -277,11 +255,11 @@ th {
     margin-bottom: 20px;
 
     iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
     }
 }
 
@@ -306,7 +284,7 @@ th {
 
 //メール
 .mail {
-    background-color: $main-bgcolor;
+    background-color: $gray-bgcolor;
     padding: 30px;
     position: relative;
     // display: flex;
@@ -332,6 +310,7 @@ th {
     }
 }
 
+//フッター会社情報
 .office-end {
     display: block;
     position: absolute;
@@ -349,34 +328,36 @@ th {
     background: $hoken-yerrow;
     opacity: 0.6;
     cursor: pointer;
-  }
-  #page_top a{
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-  }
-  #page_top a::before{
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f102';
-    font-size: 25px;
-    color: #fff;
-    position: absolute;
-    width: 25px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-  }
-  #page_top:hover {
-    opacity: 1;
-  }
 
-  //フッターの書式
+    a{
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+
+        &::before{
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: '\f102';
+            font-size: 25px;
+            color: #fff;
+            position: absolute;
+            width: 25px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+          }
+      }
+      &:hover {
+        opacity: 1;
+      }
+}
+
+//フッターの書式
 footer {
     text-align: center;
     color: #fff;

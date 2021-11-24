@@ -26,6 +26,10 @@ ul {
   padding: 0;
 }
 
+a {
+  font-size: 20px;
+}
+
 .logo a {
   color: #000;
   text-decoration: none;
@@ -82,10 +86,6 @@ header {
   margin-right: 20px;
 }
 
-a {
-  font-size: 20px;
-}
-
 .nav {
   margin: 0 40px;
 }
@@ -125,15 +125,15 @@ h2 {
   text-indent: 1em;
 }
 
-.i-catch__p {
-  margin: 66px;
-  text-align: center;
-}
-
 .i-catch {
   position: relative;
   width: 100%;
   display: block;
+}
+
+.i-catch__p {
+  margin: 66px;
+  text-align: center;
 }
 
 #index h1 {
@@ -179,15 +179,15 @@ button {
   margin-bottom: 50px;
 }
 
-.voice__content {
-  clear: left;
-  margin: 65px;
-}
-
 .voice img {
   width: 20%;
   float: left;
   margin-right: 65px;
+}
+
+.voice__content {
+  clear: left;
+  margin: 65px;
 }
 
 .plan {
