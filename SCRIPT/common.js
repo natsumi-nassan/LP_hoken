@@ -35,17 +35,17 @@ $('li a').click(function () {
   hamburger();
 });
 
-// メディアクエリの値を定義
-let mediaQuery = '(max-width: 960px)';
-// 1. MediaQueryListオブジェクトを生成
-let mql = window.matchMedia(mediaQuery); 
-// 2. 実行する処理
-function runMethod() {
-    // PCとスマホで要素の削除切り替えを行う
-    $(".office-end").toggle(); 
-}
-// 3. イベントリスナーを設定
-mql.addEventListener('change', runMethod, false);
+// // メディアクエリの値を定義
+// let mediaQuery = '(max-width: 960px)';
+// // 1. MediaQueryListオブジェクトを生成
+// let mql = window.matchMedia(mediaQuery); 
+// // 2. 実行する処理
+// function runMethod() {
+//     // PCとスマホで要素の削除切り替えを行う
+//     $(".office-end").toggle(); 
+// }
+// // 3. イベントリスナーを設定
+// mql.addEventListener('change', runMethod, false);
 
 //もっと見るボタンの挙動
 $(function() {

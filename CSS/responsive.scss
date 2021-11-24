@@ -347,21 +347,27 @@ $footer-color: #3b4043;
         width: 90px;
     }
 
-    //アクセス
-  .access {
-    padding-bottom: 56.25%; // これが縦横比
-  }
+      //アクセス
+    .access {
+      padding-bottom: 56.25%; // これが縦横比
+    }
 
     //お問い合わせ
     .toiawase {
-        padding: 0 50px;
-        margin-bottom: 20px;
+      padding: 0 50px;
+      margin-bottom: 20px;
 
-        button {
-            border-radius: 80px;
-            padding: 9px 17px;
-            margin: 0 5px;
-        }
+      button {
+        border-radius: 80px;
+        padding: 9px 17px;
+        margin: 0 5px;
+      }
     }
+
+    //フッター会社情報非表示
+    .office-end {
+      display: none;
+    }
+
 }
 
