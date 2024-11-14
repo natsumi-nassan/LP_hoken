@@ -39,11 +39,9 @@ ul a {
   color: #3583aa;
   text-decoration: none;
 }
-
 ul a:visited {
   color: #788d98;
 }
-
 ul a:hover {
   text-decoration: underline;
 }
@@ -57,7 +55,6 @@ header {
   z-index: 1;
   background-color: #ffffff;
   padding: 0 0 30px 0;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -69,18 +66,15 @@ header {
   font-weight: bold;
   font-family: "Kosugi", sans-serif;
 }
-
 .logo a {
   font-size: 25px;
 }
-
 .logo small {
   position: relative;
   left: 100px;
   font-size: 10px;
   top: -34px;
 }
-
 .logo img {
   width: 80px;
   margin-right: 20px;
@@ -94,14 +88,12 @@ header {
   float: right;
   margin-top: 30px;
 }
-
 .global-nav li {
   float: left;
   margin: 0 10px;
   font-size: 20px;
   list-style: none;
 }
-
 .global-nav li a:hover {
   border-bottom: 2px solid #000;
   padding-bottom: 3px;
@@ -165,12 +157,9 @@ button {
   padding: 5px 28px 4px;
   width: 135px;
 }
-
 .plan__content button:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
-  background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
-  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgb(0, 3, 255) 0%, rgb(2, 126, 251) 100%);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
   width: 135px;
 }
@@ -178,7 +167,9 @@ button {
 .voice {
   margin-bottom: 50px;
 }
-
+.voice [alt=voice2] {
+  border-radius: 100px;
+}
 .voice img {
   width: 20%;
   float: left;
@@ -193,7 +184,6 @@ button {
 .plan {
   padding: 0 50px 50px 218px;
 }
-
 .plan img {
   width: 70%;
   margin-right: 3px;
@@ -226,7 +216,6 @@ th {
   overflow: hidden;
   margin-bottom: 20px;
 }
-
 .access iframe {
   position: absolute;
   top: 0;
@@ -239,18 +228,14 @@ th {
   padding: 0 220px;
   margin-bottom: 20px;
 }
-
 .toiawase button {
   border-radius: 80px;
   padding: 9px 20px;
   margin: 0 5px;
 }
-
 .toiawase button:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
-  background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
-  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgb(0, 3, 255) 0%, rgb(2, 126, 251) 100%);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
 }
 
@@ -277,10 +262,8 @@ th {
   height: 31px;
   cursor: pointer;
 }
-
 #m-button:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0003ff), to(#027efb));
-  background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
+  background: linear-gradient(0deg, rgb(0, 3, 255) 0%, rgb(2, 126, 251) 100%);
 }
 
 .office-end {
@@ -300,7 +283,6 @@ th {
   opacity: 0.6;
   cursor: pointer;
 }
-
 #page_top a {
   position: relative;
   display: block;
@@ -308,11 +290,10 @@ th {
   height: 50px;
   text-decoration: none;
 }
-
 #page_top a::before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f102';
+  content: "\f102";
   font-size: 25px;
   color: #fff;
   position: absolute;
@@ -324,7 +305,6 @@ th {
   margin: auto;
   text-align: center;
 }
-
 #page_top:hover {
   opacity: 1;
 }
@@ -342,7 +322,6 @@ footer {
   background-color: #3b4043;
   padding: 2px;
 }
-
 .sns-btn:hover {
   background-color: #3b4043;
   color: #3583aa;
