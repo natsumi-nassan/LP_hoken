@@ -265,6 +265,7 @@
   .plan {
     display: flex;
     justify-content: center;
+    padding: 0px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
