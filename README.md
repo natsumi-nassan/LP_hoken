@@ -1,3 +1,3 @@
 # LP_hoken 架空の保険会社のLPになります
-レスポンシブ対応コーディング中です
+PCとiPhoneX向けに最適化しました
 https://natsumi-nassan.github.io/LP_hoken/
