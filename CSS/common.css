@@ -178,6 +178,10 @@ button {
   margin: 65px;
 }
 
+.voice[alt=voice2] {
+  border-radius: 100px;
+}
+
 .plan {
   padding: 0 50px 50px 218px;
 }
@@ -323,9 +327,4 @@ footer {
   background-color: #3b4043;
   color: #3583aa;
 }
-
-img.voice[alt="voice2"] {
-  border-radius: 100px;
-}
-
 /*# sourceMappingURL=common.css.map */
