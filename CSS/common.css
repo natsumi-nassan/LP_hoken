@@ -167,9 +167,6 @@ button {
 .voice {
   margin-bottom: 50px;
 }
-.voice [alt=voice2] {
-  border-radius: 100px;
-}
 .voice img {
   width: 20%;
   float: left;
@@ -326,4 +323,9 @@ footer {
   background-color: #3b4043;
   color: #3583aa;
 }
+
+img.voice[alt="voice2"] {
+  border-radius: 100px;
+}
+
 /*# sourceMappingURL=common.css.map */
