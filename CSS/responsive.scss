@@ -338,3 +338,10 @@ $main-whcolor: #fbfbfb;
     }
 }
 
+/* プラン一覧PC閲覧時中央寄せ */
+@media screen and (min-width: 961px) {
+    .plan {
+        display: flex;
+        justify-content: center;
+    }
+}
